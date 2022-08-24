@@ -1,38 +1,41 @@
 <!doctype html>
 <html>
   <head>
-    <title>Hello, Snaps!</title>
+    <title>Kanye says</title>
     <link rel="icon" type="image/svg" href="./images/icon.svg"/>
   </head>
 
   <body>
-    <h1>Hello, Snaps!</h1>
+    <h1>Kanye in your MetaMask</h1>
+    <img src="images/kanYE.jpeg">
     <details>
-      <summary>Instructions</summary>
+      <summary style="padding-top: 20px;">How to use this pointless snap</summary>
       <ul>
-        <li>First, click "Connect". Then, try out the other buttons!</li>
-        <li>Please note that:</li>
-        <ul>
-          <li>
-            The <code>snap.manifest.json</code> and <code>package.json</code> must be located in the server root directory..
-          </li>
-          <li>
-            The Snap bundle must be hosted at the location specified by the <code>location</code> field of <code>snap.manifest.json</code>.
-          </li>
-        </ul>
-      </ul>
+        <li>First, download <a href = "https://chrome.google.com/webstore/detail/metamask-flask-developmen/ljfoeinjpaedjfecbmggjgodbgkmjkjk/related" >Metamask Flask</a></li>
+        <li>Then, clone the <a href = "https://github.com/MichaelCutro/MM_Snap">repo </a> </li> 
+        <li>Open the command line and run</li>
+        <ul><code>yarn install</code></ul>
+        <ul><code>yarn build</code></ul>
+        <ul><code>yarn serve</code></ul>
+        <li>Open <code>http://localhost:8080/</code></li>
+        <li>Connect Wallet</li>
+        <li>Press Kanye says</li>
+        <h3>Kanye in your MetaMask</h3>
+   
     </details>
     <br/>
 
     <button class="connect">Connect</button>
-    <button class="sendHello">Send Hello</button>
+    <button class="sendKanyeQuote">Kanye says</button>
+    
   </body>
 
   <script>
     const snapId = `local:${window.location.href}`;
 
     const connectButton = document.querySelector('button.connect')
-    const sendButton = document.querySelector('button.sendHello')
+    const sendButton = document.querySelector('button.sendKanyeQuote')
+    const swapButton = document.querySelector('button.balanceWarning')
 
     connectButton.addEventListener('click', connect)
     sendButton.addEventListener('click', send)

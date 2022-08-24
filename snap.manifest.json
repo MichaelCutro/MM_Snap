@@ -1,13 +1,13 @@
 {
   "version": "0.7.0",
-  "proposedName": "MetaMask Template Snap",
-  "description": "A MetaMask Snap template.",
+  "description": "This is a snap for joking purposes",
+  "proposedName": "Kanye says",
   "repository": {
     "type": "git",
     "url": "https://github.com/MetaMask/snap-template.git"
   },
   "source": {
-    "shasum": "W4FN/2A1mQSjjrO95MGptw7pr+UR8913AOIksoajQSo=",
+    "shasum": "SKVnrXd/K/ePXbv1Pg/nTNFSzWqdfAFhIBNuDrRxwCY=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
@@ -18,7 +18,8 @@
     }
   },
   "initialPermissions": {
-    "snap_confirm": {}
+    "snap_confirm": {},
+    "endowment:network-access": {}
   },
   "manifestVersion": "0.1"
 }
