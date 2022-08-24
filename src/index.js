@@ -7,7 +7,7 @@ module.exports.onRpcRequest = async ({ origin, request }) => {
   switch (request.method) {
     case 'hello':
 
-      const junk = JSON.parse(await getKanyeQuote())
+      const junk = JSON.parse(await getKanyeQuote());
       const kanyeQuote = (junk.quote).toString();
 
       const message = "⚠️ BEFORE YOU APPROVE THIS TRANSACTION ⚠️ \n" + "\n" + "Kanye says, \n" + "\n" + kanyeQuote;
